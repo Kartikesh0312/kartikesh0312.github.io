@@ -2,55 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kartikesh Chatti - Data Science Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-    h1 { color: #2c3e50; }
-    h2 { color: #2980b9; }
-    a { color: #3498db; }
-    .section { margin-bottom: 20px; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kartikesh Chatti - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Kartikesh Chatti</h1>
-  <p>Data Science Master’s Student | SUNY Buffalo</p>
-  <p>Email: <a href="mailto:kartikesh0312@gmail.com">kartikesh0312@gmail.com</a> | 
-   LinkedIn: <a href="https://www.linkedin.com/in/kartikesh-chatti-16254a21b/">Kartikesh Chatti</a> | 
-   GitHub: <a href="https://github.com/Kartikesh0312">Kartikesh0312</a></p>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+    </ul>
+  </nav>
 
-  <div class="section">
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Kartikesh Chatti</h1>
+    <p>Data Science Master’s Student | SUNY Buffalo</p>
+    <div class="contact-links">
+      <p>
+        Email: <a href="mailto:kartikesh0312@gmail.com">kartikesh0312@gmail.com</a> | 
+        LinkedIn: <a href="https://linkedin.com/in/kartikesh-chatti-16254421b">Kartikesh Chatti</a> | 
+        GitHub: <a href="https://github.com/Kartikesh0312">Kartikesh0312</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- About Me -->
+  <div class="section" id="about">
     <h2>About Me</h2>
     <p>I’m a Data Science graduate student with hands-on experience in SQL, Python, and Machine Learning. I build scalable databases (PostgreSQL) and AI models (CNNs), with skills in AWS, Power BI, and Tableau. Seeking opportunities in Data Science and Machine Learning.</p>
   </div>
 
-  <div class="section">
+  <!-- Projects -->
+  <div class="section" id="projects">
     <h2>Projects</h2>
-    <h3>Detox Dial: AI-Driven App to Combat Digital Addiction (Feb 2025)</h3>
-    <p>Collaborated on <strong>Detox Dial</strong>, an AI-powered app designed to help users "Ditch Distractions, Dominate Your Day!" by combating digital addiction caused by modern social media platforms. Addressed the limitations of traditional app blockers by developing a personalized intervention system that adapts to individual behaviors, reducing excessive screen time and improving productivity, mental health, and personal goals. Built a conversational AI assistant using Python, which offers tailored habit interventions through unlimited chats and AI calls for subscribers, along with a personalized AI persona. Designed a freemium business model: free users access limited features with non-intrusive ads, while subscribers enjoy an ad-free experience with advanced features, and enterprises can integrate the AI into wellness programs to boost employee productivity. Projected revenue of $1.2M in Year 1, scaling to $25M+ by Year 3, with a break-even point at 33,758 paid users ($49.99 annual subscription). Identified a rising market need for AI-driven solutions to tackle digital addiction, with plans for future enhancements like custom voice cloning, multiple AI personas, and a reward system (e.g., streaks, badges). Worked in a team with Venkata Sai Bhargav Dhara and Shamaya Sri Sigireddi to deliver this impactful solution.</p>
-    <p><strong>Tools:</strong> Python, Conversational AI Frameworks</p>
-    <p><strong>Skills:</strong> AI Development, Conversational AI, Data-Driven Personalization, Business Modeling, Team Collaboration</p>
-    <p><a href="https://github.com/Kartikesh0312/detox-dial">View on GitHub</a></p>
-    <p><a href="https://github.com/Kartikesh0312/Detox-Dial/blob/main/Detox%20Dial.pdf">View Project Presentation</a></p>
+    <div class="project-card">
+      <h3>Detox Dial: AI-Driven App to Combat Digital Addiction (Feb 2025)</h3>
+      <p>Collaborated on <strong>Detox Dial</strong>, an AI-powered app designed to help users "Ditch Distractions, Dominate Your Day!" by combating digital addiction caused by modern social media platforms. Addressed the limitations of traditional app blockers by developing a personalized intervention system that adapts to individual behaviors, reducing excessive screen time and improving productivity, mental health, and personal goals. Built a conversational AI assistant using Python (see <code>app.py</code> in the repository), which offers tailored habit interventions through unlimited chats and AI calls for subscribers, along with a personalized AI persona. Designed a freemium business model: free users access limited features with non-intrusive ads, while subscribers enjoy an ad-free experience with advanced features, and enterprises can integrate the AI into wellness programs to boost employee productivity. Projected revenue of $1.2M in Year 1, scaling to $25M+ by Year 3, with a break-even point at 33,758 paid users ($49.99 annual subscription). Identified a rising market need for AI-driven solutions to tackle digital addiction, with plans for future enhancements like custom voice cloning, multiple AI personas, and a reward system (e.g., streaks, badges). Worked in a team with Venkata Sai Bhargav Dhara and Shamaya Sri Sigireddi to deliver this impactful solution.</p>
+      <p class="tools"><strong>Tools:</strong> Python, Conversational AI Frameworks</p>
+      <p class="skills"><strong>Skills:</strong> AI Development, Conversational AI, Data-Driven Personalization, Business Modeling, Team Collaboration</p>
+      <a href="https://github.com/Kartikesh0312/detox-dial">View on GitHub</a>
+      <a href="https://github.com/Kartikesh0312/detox-dial/raw/main/detox-dial-presentation.pptx">View Project Presentation</a>
+    </div>
 
-    <h3>Football Database Management System (Sept 2024 – Dec 2024)</h3>
-    <p>Built a scalable PostgreSQL database to revolutionize data management for football organizations, replacing outdated flat-file systems with a structured, relational schema. Tackled the challenge of handling complex football data—spanning players, teams, matches, and merchandise sales—by designing a normalized database with well-defined tables, keys, and relationships. Optimized SQL queries to reduce execution time by 30%, enabling faster insights for coaches and analysts, and implemented triggers and logs to ensure 98% data integrity across multi-user access. Developed a dark-themed, responsive web interface for CRUD operations, allowing seamless interaction with key entities like players and teams. Designed with role-based access in mind (e.g., coaches for match data, analysts for performance stats), this system streamlined operations and improved decision-making for football organizations.</p>
-    <p><strong>Tools:</strong> PostgreSQL, Draw.io, HTML, CSS</p>
-    <p><strong>Skills:</strong> Database Design, SQL Optimization, Data Integrity, Web Development, Role-Based Access</p>
-    <p><a href="https://github.com/Kartikesh0312/football---db">View on GitHub</a></p>
+    <div class="project-card">
+      <h3>Football Database Management System (Sept 2024 – Dec 2024)</h3>
+      <p>Built a scalable PostgreSQL database to revolutionize data management for football organizations, replacing outdated flat-file systems with a structured, relational schema. Tackled the challenge of handling complex football data—spanning players, teams, matches, and merchandise sales—by designing a normalized database with well-defined tables, keys, and relationships. Optimized SQL queries to reduce execution time by 30%, enabling faster insights for coaches and analysts, and implemented triggers and logs to ensure 98% data integrity across multi-user access. Developed a dark-themed, responsive web interface for CRUD operations, allowing seamless interaction with key entities like players and teams. Designed with role-based access in mind (e.g., coaches for match data, analysts for performance stats), this system streamlined operations and improved decision-making for football organizations.</p>
+      <p class="tools"><strong>Tools:</strong> PostgreSQL, Draw.io, HTML, CSS</p>
+      <p class="skills"><strong>Skills:</strong> Database Design, SQL Optimization, Data Integrity, Web Development, Role-Based Access</p>
+      <a href="https://github.com/Kartikesh0312/football---db">View on GitHub</a>
+    </div>
 
-    <h3>Brain Tumor Detection using CNNs (April 2023)</h3>
-    <p>Developed a Convolutional Neural Network (CNN) model to classify brain tumor grades using MR Spectroscopic Imaging (MRSI) data. Utilized a dataset of 3,533 MRI scans (2,934 tumorous, 599 non-tumorous) from Kaggle, preprocessed by resizing to 128x128x3, normalizing pixel values, and addressing class imbalance. Applied pre-trained models (ResNet50, InceptionV3, Xception) with transfer learning and data augmentation to overcome limited labeled data. Achieved reliable classification through Stratified K-Fold Cross Validation (5 folds, 4,692 training images, 1,173 validation images per fold). Evaluated performance using accuracy, precision, recall, F1 score, and AUC-ROC metrics.</p>
-    <p><strong>Tools:</strong> Python, TensorFlow, Keras, NumPy, OpenCV</p>
-    <p><strong>Skills:</strong> Machine Learning, Deep Learning, Image Processing, Data Preprocessing, Transfer Learning</p>
-    <p><a href="https://github.com/Kartikesh0312/brain-tumor-ml">View on GitHub</a></p>
+    <div class="project-card">
+      <h3>Brain Tumor Detection using CNNs (April 2023)</h3>
+      <p>Developed a Convolutional Neural Network (CNN) model to classify brain tumor grades using MR Spectroscopic Imaging (MRSI) data. Utilized a dataset of 3,533 MRI scans (2,934 tumorous, 599 non-tumorous) from Kaggle, preprocessed by resizing to 128x128x3, normalizing pixel values, and addressing class imbalance. Applied pre-trained models (ResNet50, InceptionV3, Xception) with transfer learning and data augmentation to overcome limited labeled data. Achieved reliable classification through Stratified K-Fold Cross Validation (5 folds, 4,692 training images, 1,173 validation images per fold). Evaluated performance using accuracy, precision, recall, F1 score, and AUC-ROC metrics.</p>
+      <p class="tools"><strong>Tools:</strong> Python, TensorFlow, Keras, NumPy, OpenCV</p>
+      <p class="skills"><strong>Skills:</strong> Machine Learning, Deep Learning, Image Processing, Data Preprocessing, Transfer Learning</p>
+      <a href="https://github.com/Kartikesh0312/brain-tumor-ml">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>QR Attendance System (March 2022)</h3>
+      <p>Developed a QR code-based attendance system to streamline tracking for educational and organizational settings, eliminating manual errors and saving time. Designed a solution where users scan a QR code to mark their attendance, which is automatically logged into a date-stamped Excel file using Pandas. Built a user-friendly interface with JavaScript for real-time interaction, ensuring seamless operation across devices. This system improved efficiency by automating attendance recording and provided a scalable solution for small to medium-sized groups.</p>
+      <p class="tools"><strong>Tools:</strong> Python, JavaScript, Pandas</p>
+      <p class="skills"><strong>Skills:</strong> Automation, Data Management, Web Development</p>
+      <a href="https://github.com/Kartikesh0312/qr-attendance">View on GitHub</a>
+    </div>
   </div>
 
-  <div class="section">
+  <!-- Skills -->
+  <div class="section" id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Languages: Python, SQL, C++, HTML</li>
-      <li>Databases: PostgreSQL, SQLite3</li>
-      <li>Tools: AWS, Power BI, Tableau, Jupyter Notebook</li>
+      <li><strong>Programming Languages:</strong> Python, SQL, JavaScript</li>
+      <li><strong>Databases:</strong> PostgreSQL</li>
+      <li><strong>Machine Learning:</strong> TensorFlow, Keras, Scikit-Learn</li>
+      <li><strong>AI Development:</strong> Conversational AI</li>
+      <li><strong>Web Development:</strong> HTML, CSS</li>
+      <li><strong>Tools:</strong> Draw.io, Pandas, NumPy, OpenCV, AWS, Power BI, Tableau</li>
+      <li><strong>Concepts:</strong> Database Design, Data Preprocessing, Transfer Learning, Automation, Role-Based Access, Business Modeling</li>
+    </ul>
+  </div>
+
+  <!-- Certifications -->
+  <div class="section" id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Machine Learning Foundations – Kaggle (2023)</li>
+      <li>Python Core Certification – SoloLearn (2022)</li>
+      <li>Power BI Ultimate Orientation – Udemy (2023)</li>
+      <li>Data Science Foundations – Great Learning (2023)</li>
     </ul>
   </div>
 </body>
