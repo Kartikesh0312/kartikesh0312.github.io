@@ -156,11 +156,12 @@ nav ul li a:hover {
   display: inline-block;
   background-color: var(--button-bg);
   color: var(--button-text);
-  padding: 0.3rem 0.8rem; /* Slightly smaller padding than project buttons */
+  padding: 0.2rem 0.6rem; /* Smaller padding to reduce button size */
   border-radius: 5px;
   text-decoration: none;
-  font-size: 0.9rem; /* Smaller font size to fit beside the subtitle */
-  margin-left: 0.5rem; /* Space between "Certifications" and the button */
+  font-size: 0.8rem; /* Smaller font size for the "View" text */
+  line-height: 1; /* Adjust line-height to center the text vertically */
+  margin-left: 0.5rem;
   transition: background-color 0.3s ease;
 }
 
