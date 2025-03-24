@@ -168,6 +168,31 @@ nav ul li a:hover {
   background-color: var(--button-bg-hover);
 }
 
+.cert-button {
+  display: inline-block;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: 0.2rem 0.6rem; /* Even smaller padding */
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.8rem; /* Even smaller font */
+  margin-left: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.cert-button {
+  display: inline-block;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  transition: background-color 0.3s ease;
+  border: 1px solid var(--button-text); /* Add a white border */
+}
+
 /* Project cards */
 .project-card {
   background-color: var(--card-bg);
