@@ -151,6 +151,23 @@ nav ul li a:hover {
   display: inline-block;
 }
 
+/* Style for the link icon in Certifications section */
+#certifications h2 a {
+  color: var(--hero-link);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block; /* Ensure the link is visible */
+}
+
+#certifications h2 a:hover {
+  color: var(--hero-link-hover);
+}
+
+#certifications h2 a i {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
 /* Project cards */
 .project-card {
   background-color: var(--card-bg);
