@@ -151,21 +151,21 @@ nav ul li a:hover {
   display: inline-block;
 }
 
-/* Style for the link icon in Certifications section */
-#certifications h2 a {
-  color: var(--hero-link);
+/* Style for the View button in Certifications section */
+.cert-button {
+  display: inline-block;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: 0.3rem 0.8rem; /* Slightly smaller padding than project buttons */
+  border-radius: 5px;
   text-decoration: none;
-  transition: color 0.3s ease;
-  display: inline-block; /* Ensure the link is visible */
+  font-size: 0.9rem; /* Smaller font size to fit beside the subtitle */
+  margin-left: 0.5rem; /* Space between "Certifications" and the button */
+  transition: background-color 0.3s ease;
 }
 
-#certifications h2 a:hover {
-  color: var(--hero-link-hover);
-}
-
-#certifications h2 a i {
-  font-size: 1.2rem;
-  vertical-align: middle;
+.cert-button:hover {
+  background-color: var(--button-bg-hover);
 }
 
 /* Project cards */
