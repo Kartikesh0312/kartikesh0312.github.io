@@ -1,100 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kartikesh Chatti - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartikesh Chatti | Data Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><button id="mode-toggle" class="mode-toggle">🌙</button></li>
-    </ul>
-  </nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Kartikesh Chatti</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
 
-  <!-- Hero Section -->
-  <div class="hero">
-  <h1>Kartikesh Chatti</h1>
-  <p>Data Science Master’s Student | SUNY Buffalo</p>
-  <div class="contact-links">
-    <p>
-      <a href="mailto:kartikesh0312@gmail.com"><i class="fas fa-envelope"></i> Email</a> | 
-      <a href="https://www.linkedin.com/in/kartikesh-chatti/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
-      <a href="https://github.com/Kartikesh0312" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    </p>
-  </div>
-</div>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1>Hello, I'm Kartikesh Chatti</h1>
+                    <p>I’m a Master’s student in Data Science at SUNY Buffalo, specializing in Python, Machine Learning, and SQL. With hands-on experience in data analytics and AI-driven projects, I’m passionate about leveraging data to solve real-world problems. Let’s connect!</p>
+                    <div class="social-links">
+                        <a href="mailto:kartikesh0312@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                        <a href="https://www.linkedin.com/in/kartikesh-chatti" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/kartikesh0312" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/image.jpeg" alt="Kartikesh Chatti">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- About Me -->
-  <div class="section" id="about">
-    <h2>About Me</h2>
-    <p>I’m a Data Science graduate student with hands-on experience in SQL, Python, and Machine Learning. I build scalable databases (PostgreSQL) and AI models (CNNs), with skills in AWS, Power BI, and Tableau. Seeking opportunities in Data Science and Machine Learning.</p>
-  </div>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Data Analyst, M3 Solutions Private Limited</h3>
+                <p class="duration">Aug 2022 - Dec 2023</p>
+                <ul>
+                    <li>Engineered SQL-based data pipelines to extract, clean, and integrate data from multi-source environments, enhancing data readiness for analytics across staffing and IT projects.</li>
+                    <li>Built interactive dashboards and data visualizations using Power BI and Tableau to track key business metrics such as resource utilization, project performance, and client engagement trends.</li>
+                    <li>Leveraged Python (pandas, NumPy, matplotlib) for exploratory data analysis (EDA), contributing to internal ML models for predicting candidate fit and improving recruitment efficiency.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-  <!-- Projects -->
-  <div class="section" id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Detox Dial: AI-Driven App to Combat Digital Addiction (Feb 2025)</h3>
-      <p>Collaborated on <strong>Detox Dial</strong>, an AI-powered app designed to help users "Ditch Distractions, Dominate Your Day!" by combating digital addiction caused by modern social media platforms. Addressed the limitations of traditional app blockers by developing a personalized intervention system that adapts to individual behaviors, reducing excessive screen time and improving productivity, mental health, and personal goals. Built a conversational AI assistant using Python (see <code>app.py</code> in the repository), which offers tailored habit interventions through unlimited chats and AI calls for subscribers, along with a personalized AI persona. Designed a freemium business model: free users access limited features with non-intrusive ads, while subscribers enjoy an ad-free experience with advanced features, and enterprises can integrate the AI into wellness programs to boost employee productivity. Projected revenue of $1.2M in Year 1, scaling to $25M+ by Year 3, with a break-even point at 33,758 paid users ($49.99 annual subscription). Identified a rising market need for AI-driven solutions to tackle digital addiction, with plans for future enhancements like custom voice cloning, multiple AI personas, and a reward system (e.g., streaks, badges). Worked in a team with Venkata Sai Bhargav Dhara and Shamaya Sri Sigireddi to deliver this impactful solution.</p>
-      <p class="tools"><strong>Tools:</strong> Python, Conversational AI Frameworks</p>
-      <p class="skills"><strong>Skills:</strong> AI Development, Conversational AI, Data-Driven Personalization, Business Modeling, Team Collaboration</p>
-      <a href="https://github.com/Kartikesh0312/detox-dial">View on GitHub</a>
-      <a href="https://github.com/Kartikesh0312/Detox-Dial/blob/main/Detox%20Dial.pdf">View Project Presentation</a>
-    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Smart Farming Assistant</h3>
+                    <p class="duration">Mar 2025</p>
+                    <p>Developed an AI-powered web application for precision farming, enabling farmers to make data-driven decisions.</p>
+                    <ul>
+                        <li>Achieved 92% accuracy in plant disease detection using ResNet18.</li>
+                        <li>98% accuracy in irrigation prediction, optimizing water use by 20%.</li>
+                        <li>Crop yield estimation model (R²=0.95) for better resource planning.</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Detox Dial (AI For Good Hackathon)</h3>
+                    <p class="duration">Feb 2025</p>
+                    <p>An AI-powered digital wellness app to combat social media addiction through personalized interventions.</p>
+                    <ul>
+                        <li>Created a user-centric UI/UX with adaptive AI responses based on Briggs Personality Test.</li>
+                        <li>Utilized data analytics and ML to provide tailored detox recommendations.</li>
+                        <li>Enhanced user engagement and focus retention through digital habit transformation.</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Football Database Management System</h3>
+                    <p class="duration">Sep 2024 - Dec 2024</p>
+                    <p>Developed a PostgreSQL relational database to manage football data efficiently.</p>
+                    <ul>
+                        <li>Designed normalized schemas with 98% data integrity and scalability.</li>
+                        <li>Optimized SQL queries, reducing execution time by 30%.</li>
+                        <li>Enabled multi-user access with role-based permissions for coaches, analysts, and sales teams.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="project-card">
-      <h3>Football Database Management System (Sept 2024 – Dec 2024)</h3>
-      <p>Built a scalable PostgreSQL database to revolutionize data management for football organizations, replacing outdated flat-file systems with a structured, relational schema. Tackled the challenge of handling complex football data—spanning players, teams, matches, and merchandise sales—by designing a normalized database with well-defined tables, keys, and relationships. Optimized SQL queries to reduce execution time by 30%, enabling faster insights for coaches and analysts, and implemented triggers and logs to ensure 98% data integrity across multi-user access. Developed a dark-themed, responsive web interface for CRUD operations, allowing seamless interaction with key entities like players and teams. Designed with role-based access in mind (e.g., coaches for match data, analysts for performance stats), this system streamlined operations and improved decision-making for football organizations.</p>
-      <p class="tools"><strong>Tools:</strong> PostgreSQL, Draw.io, HTML, CSS</p>
-      <p class="skills"><strong>Skills:</strong> Database Design, SQL Optimization, Data Integrity, Web Development, Role-Based Access</p>
-      <a href="https://github.com/Kartikesh0312/football---db">View on GitHub</a>
-    </div>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-item"><i class="fas fa-code"></i> C/C++</div>
+                <div class="skill-item"><i class="fas fa-database"></i> MySQL</div>
+                <div class="skill-item"><i class="fas fa-database"></i> PostgreSQL</div>
+                <div class="skill-item"><i class="fas fa-brain"></i> Machine Learning</div>
+                <div class="skill-item"><i class="fas fa-language"></i> NLP</div>
+                <div class="skill-item"><i class="fas fa-chart-bar"></i> Power BI</div>
+                <div class="skill-item"><i class="fas fa-chart-line"></i> Tableau</div>
+                <div class="skill-item"><i class="fab fa-html5"></i> HTML</div>
+                <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS</div>
+                <div class="skill-item"><i class="fas fa-laptop-code"></i> Data Structures</div>
+                <div class="skill-item"><i class="fas fa-tools"></i> UI/UX Design</div>
+            </div>
+        </div>
+    </section>
 
-    <div class="project-card">
-      <h3>Brain Tumor Detection using CNNs (April 2023)</h3>
-      <p>Developed a Convolutional Neural Network (CNN) model to classify brain tumor grades using MR Spectroscopic Imaging (MRSI) data. Utilized a dataset of 3,533 MRI scans (2,934 tumorous, 599 non-tumorous) from Kaggle, preprocessed by resizing to 128x128x3, normalizing pixel values, and addressing class imbalance. Applied pre-trained models (ResNet50, InceptionV3, Xception) with transfer learning and data augmentation to overcome limited labeled data. Achieved reliable classification through Stratified K-Fold Cross Validation (5 folds, 4,692 training images, 1,173 validation images per fold). Evaluated performance using accuracy, precision, recall, F1 score, and AUC-ROC metrics.</p>
-      <p class="tools"><strong>Tools:</strong> Python, TensorFlow, Keras, NumPy, OpenCV</p>
-      <p class="skills"><strong>Skills:</strong> Machine Learning, Deep Learning, Image Processing, Data Preprocessing, Transfer Learning</p>
-      <a href="https://github.com/Kartikesh0312/brain-tumor-ml">View on GitHub</a>
-    </div>
-  </div>
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="certifications-grid" id="certifications-grid">
+                <div class="certification-item">
+                    <img src="https://placehold.co/300x200?text=AI+for+Good+Challenge" alt="AI for Good Challenge">
+                    <p>AI for Good Challenge - University at Buffalo</p>
+                </div>
+                <div class="certification-item">
+                    <img src="https://placehold.co/300x200?text=Machine+Learning+Foundations" alt="Machine Learning Foundations">
+                    <p>Machine Learning Foundations - Kaggle</p>
+                </div>
+                <div class="certification-item">
+                    <img src="https://placehold.co/300x200?text=Python+Core+Certification" alt="Python Core Certification">
+                    <p>Python Core Certification - SoloLearn</p>
+                </div>
+                <div class="certification-item hidden">
+                    <img src="https://placehold.co/300x200?text=PowerBI+Ultimate+Orientation" alt="PowerBI Ultimate Orientation">
+                    <p>PowerBI Ultimate Orientation - Udemy</p>
+                </div>
+                <div class="certification-item hidden">
+                    <img src="https://placehold.co/300x200?text=Data+Science+Foundations" alt="Data Science Foundations">
+                    <p>Data Science Foundations - Great Learning</p>
+                </div>
+                <div class="certification-item hidden">
+                    <img src="https://placehold.co/300x200?text=Data+Science+in+Our+World" alt="Data Science in Our World">
+                    <p>Data Science in Our World - IBM Skill Build</p>
+                </div>
+            </div>
+            <button id="show-more-btn" class="show-more-btn">Show More</button>
+        </div>
+    </section>
 
-  <!-- Skills -->
-  <div class="section" id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming Languages:</strong> Python, SQL, JavaScript</li>
-      <li><strong>Databases:</strong> PostgreSQL</li>
-      <li><strong>Machine Learning:</strong> TensorFlow, Keras, Scikit-Learn</li>
-      <li><strong>AI Development:</strong> Conversational AI</li>
-      <li><strong>Web Development:</strong> HTML, CSS</li>
-      <li><strong>Tools:</strong> Draw.io, Pandas, NumPy, OpenCV, AWS, Power BI, Tableau</li>
-      <li><strong>Concepts:</strong> Database Design, Data Preprocessing, Transfer Learning, Automation, Role-Based Access, Business Modeling</li>
-    </ul>
-  </div>
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Download my resume to learn more about my qualifications and experience.</p>
+            <a href="resume.pdf" download class="btn">Download Resume</a>
+        </div>
+    </section>
 
-  <!-- Certifications -->
-  <div class="section" id="certifications">
-    <h2>Certifications <a href="https://drive.google.com/drive/folders/1Wa0iRkVlJc-sIQIVGKzGoBq_-Ie2ZOis?usp=sharing" target="_blank" class="cert-button">View</a></h2>
-    <ul>
-      <li>Machine Learning Foundations – Kaggle (2023)</li>
-      <li>Python Core Certification – SoloLearn (2022)</li>
-      <li>Power BI Ultimate Orientation – Udemy (2023)</li>
-      <li>Data Science Foundations – Great Learning (2023)</li>
-      <li>Data Science in Our World – IBM Skill Build (2025)</li>
-    </ul>
-  </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Kartikesh Chatti. All rights reserved.</p>
+    </footer>
 
-  <!-- JavaScript -->
-  <script src="script.js"></script>
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
