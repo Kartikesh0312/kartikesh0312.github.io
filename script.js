@@ -31,13 +31,3 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
     });
 });
 
-// Show More button for certifications
-const showMoreBtn = document.getElementById('show-more-btn');
-const hiddenItems = document.querySelectorAll('.certification-item.hidden');
-
-showMoreBtn.addEventListener('click', () => {
-    hiddenItems.forEach(item => {
-        item.classList.toggle('hidden');
-    });
-    showMoreBtn.textContent = showMoreBtn.textContent === 'Show More' ? 'Show Less' : 'Show More';
-});
