@@ -261,64 +261,6 @@ h3 {
     color: #00aaff;
 }
 
-/* Certifications Section */
-.certifications-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.certification-item {
-    text-align: center;
-    background: linear-gradient(135deg, #1B263B 0%, #2A3E5A 100%);
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
-    border: 2px solid transparent;
-}
-
-.certification-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
-    border: 2px solid transparent;
-    box-shadow: 0 0 20px #00aaff, 0 0 40px #00aaff, 0 0 60px #00aaff;
-}
-
-.certification-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-.certification-item p {
-    font-size: 1.1rem;
-}
-
-.hidden {
-    display: none;
-}
-
-.show-more-btn {
-    display: block;
-    margin: 0 auto;
-    padding: 0.75rem 2rem;
-    background-color: #00aaff;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.show-more-btn:hover {
-    background-color: #0088cc;
-}
-
 /* Resume Section */
 .btn {
     display: inline-block;
