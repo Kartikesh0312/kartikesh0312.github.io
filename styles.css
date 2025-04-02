@@ -1,281 +1,265 @@
-/* Reset default styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Define CSS variables for light mode (default) */
-:root {
-  --background-color: #f4f4f9;
-  --text-color: #333;
-  --nav-bg: #1a1a2e;
-  --nav-text: #fff;
-  --nav-hover: #ff6f61;
-  --hero-bg-start: #1a1a2e;
-  --hero-bg-end: #16213e;
-  --hero-text: #fff;
-  --hero-link: #ff6f61;
-  --hero-link-hover: #fff;
-  --section-heading: #1a1a2e;
-  --section-heading-border: #ff6f61;
-  --card-bg: #fff;
-  --card-shadow: rgba(0, 0, 0, 0.1);
-  --card-shadow-hover: rgba(0, 0, 0, 0.15);
-  --card-text: #555;
-  --card-heading: #1a1a2e;
-  --card-tools: #777;
-  --button-bg: #ff6f61;
-  --button-bg-hover: #e65b50;
-  --button-text: #fff;
-}
-
-/* Dark mode styles */
-body.dark-mode {
-  --background-color: #1e1e2e;
-  --text-color: #e0e0e0;
-  --nav-bg: #121212;
-  --nav-text: #e0e0e0;
-  --nav-hover: #ff6f61;
-  --hero-bg-start: #121212;
-  --hero-bg-end: #1e1e2e;
-  --hero-text: #e0e0e0;
-  --hero-link: #ff6f61;
-  --hero-link-hover: #e0e0e0;
-  --section-heading: #e0e0e0;
-  --section-heading-border: #ff6f61;
-  --card-bg: #2a2a3b;
-  --card-shadow: rgba(255, 255, 255, 0.1);
-  --card-shadow-hover: rgba(255, 255, 255, 0.15);
-  --card-text: #b0b0b0;
-  --card-heading: #e0e0e0;
-  --card-tools: #a0a0a0;
-  --button-bg: #ff6f61;
-  --button-bg-hover: #e65b50;
-  --button-text: #fff;
-}
-
-/* Global styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  line-height: 1.6;
-  scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    overflow-x: hidden;
 }
 
-/* Navigation bar */
-nav {
-  position: sticky;
-  top: 0;
-  background-color: var(--nav-bg);
-  padding: 1rem;
-  box-shadow: 0 2px 5px var(--card-shadow);
-  z-index: 1000;
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #00aaff;
 }
 
-nav ul li a {
-  color: var(--nav-text);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
 }
 
-nav ul li a:hover {
-  color: var(--nav-hover);
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-/* Mode toggle button */
-.mode-toggle {
-  background: none;
-  border: none;
-  color: var(--nav-text);
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: color 0.3s ease;
+.nav-links a:hover {
+    color: #00aaff;
 }
 
-.mode-toggle:hover {
-  color: var(--nav-hover);
-}
-
-/* Hero section */
-.hero {
-  background: linear-gradient(135deg, var(--hero-bg-start) 0%, var(--hero-bg-end) 100%);
-  color: var(--hero-text);
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.hero .contact-links a {
-  color: var(--hero-link);
-  text-decoration: none;
-  margin: 0 0.5rem;
-  transition: color 0.3s ease;
-}
-
-.hero .contact-links a:hover {
-  color: var(--hero-link-hover);
-}
-
-/* Section styles */
 .section {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
 }
 
-.section h2 {
-  font-size: 2.5rem;
-  color: var(--section-heading);
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid var(--section-heading-border);
-  display: inline-block;
+.container {
+    max-width: 1200px;
+    width: 100%;
 }
 
-/* Style for the View button in Certifications section */
-.cert-button {
-  display: inline-block;
-  background-color: var(--button-bg);
-  color: var(--button-text);
-  padding: 0.2rem 0.6rem; /* Smaller padding to reduce button size */
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.8rem; /* Smaller font size for the "View" text */
-  line-height: 1; /* Adjust line-height to center the text vertically */
-  margin-left: 0.5rem;
-  transition: background-color 0.3s ease;
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.cert-button:hover {
-  background-color: var(--button-bg-hover);
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-.cert-button {
-  display: inline-block;
-  background-color: var(--button-bg);
-  color: var(--button-text);
-  padding: 0.2rem 0.6rem; /* Even smaller padding */
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.8rem; /* Even smaller font */
-  margin-left: 0.5rem;
-  transition: background-color 0.3s ease;
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
-.cert-button {
-  display: inline-block;
-  background-color: var(--button-bg);
-  color: var(--button-text);
-  padding: 0.3rem 0.8rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  margin-left: 0.5rem;
-  transition: background-color 0.3s ease;
-  border: 1px solid var(--button-text); /* Add a white border */
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
-/* Project cards */
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.about-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00aaff;
+}
+
+.social-links a {
+    color: #00aaff;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+}
+
+.social-links a i {
+    margin-right: 0.5rem;
+}
+
+/* Experience Section */
+.experience-item {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.duration {
+    font-style: italic;
+    color: #bbb;
+    margin-bottom: 1rem;
+}
+
+.experience-item ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.experience-item li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Projects Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
 .project-card {
-  background-color: var(--card-bg);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px var(--card-shadow);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px var(--card-shadow-hover);
-}
-
-.project-card h3 {
-  font-size: 1.5rem;
-  color: var(--card-heading);
-  margin-bottom: 0.5rem;
+    transform: translateY(-5px);
 }
 
 .project-card p {
-  font-size: 1rem;
-  color: var(--card-text);
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
-.project-card .tools,
-.project-card .skills {
-  font-size: 0.9rem;
-  color: var(--card-tools);
-  margin-bottom: 0.5rem;
+.project-card ul {
+    list-style: disc;
+    padding-left: 1.5rem;
 }
 
-.project-card a {
-  display: inline-block;
-  background-color: var(--button-bg);
-  color: var(--button-text);
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  margin: 0.5rem 0;
-  transition: background-color 0.3s ease;
+.project-card li {
+    margin-bottom: 0.5rem;
 }
 
-.project-card a:hover {
-  background-color: var(--button-bg-hover);
-}
-
-/* Skills and Certifications */
-.section ul {
-  list-style: none;
-  margin-top: 1rem;
-}
-
-.section ul li {
-  font-size: 1rem;
-  color: var(--card-text);
-  margin-bottom: 0.5rem;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  nav ul {
-    flex-direction: column;
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
     text-align: center;
-  }
+}
 
-  .section h2 {
+.skill-item {
+    background-color: #2a2a2a;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.skill-item i {
+    display: block;
     font-size: 2rem;
-  }
+    margin-bottom: 0.5rem;
+    color: #00aaff;
+}
 
-  .project-card h3 {
-    font-size: 1.3rem;
-  }
+/* Certifications Section */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.certification-item {
+    text-align: center;
+}
+
+.certification-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.certification-item p {
+    font-size: 1.1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.show-more-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0.75rem 2rem;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.show-more-btn:hover {
+    background-color: #0088cc;
+}
+
+/* Resume Section */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #00aaff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0088cc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #000;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #bbb;
 }
